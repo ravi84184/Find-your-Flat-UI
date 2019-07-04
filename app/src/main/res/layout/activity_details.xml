@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp">
+
+            <ImageView
+                android:id="@+id/img_apartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/c" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/round_bg">
+
+                <com.varunest.sparkbutton.SparkButton
+                    android:id="@+id/spark_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    app:sparkbutton_activeImage="@drawable/ic_heart_active"
+                    app:sparkbutton_iconSize="20dp"
+                    app:sparkbutton_inActiveImage="@drawable/ic_heart_deactive"
+                    app:sparkbutton_primaryColor="@color/colorPrimary"
+                    app:sparkbutton_secondaryColor="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/tag_bg"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <devsnik.com.findyourflat.customui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$5000 /"
+                    android:id="@+id/txt_price"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontName="@string/font_roboto_bold" />
+
+                <devsnik.com.findyourflat.customui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="month"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_9ssp"
+                    app:fontName="@string/font_roboto_bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <devsnik.com.findyourflat.customui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hloom Apartmentt"
+                android:id="@+id/txt_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_20sdp"
+                app:fontName="@string/font_roboto_bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <devsnik.com.findyourflat.customui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Living room"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontName="@string/font_roboto_bold" />
+
+                    <devsnik.com.findyourflat.customui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="80sqt"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontName="@string/font_roboto_regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <devsnik.com.findyourflat.customui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Bedroom"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontName="@string/font_roboto_bold" />
+
+                    <devsnik.com.findyourflat.customui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="50sqt"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontName="@string/font_roboto_regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <devsnik.com.findyourflat.customui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Bathroom"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontName="@string/font_roboto_bold" />
+
+                    <devsnik.com.findyourflat.customui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="20sqt"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontName="@string/font_roboto_regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <devsnik.com.findyourflat.customui.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Highly customizable and lightweight library that allows you to create a button with animation effect similar to Twitter's heart animation."
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12ssp"
+                app:fontName="@string/font_roboto_regular" />
+
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/example_gray_on_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                app:area_margin="4dp"
+                app:outer_color="#0B5BA3"
+                app:inner_color="@android:color/white"
+                app:text="Slide to book"
+                app:text_size="12sp"
+                app:slider_height="50dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:slider_locked="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
